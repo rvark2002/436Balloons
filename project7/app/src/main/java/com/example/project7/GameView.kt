@@ -7,7 +7,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.Toast
 
-class GameView(context: Context, private val balloons: ArrayList<Balloon>) : View(context) {
+class GameView(context: Context, private val activity: AppCompatActivity, private val balloons: ArrayList<Balloon>) : View(context) {
 
     private val balloonPaint = Paint()
     private var attempts = 0

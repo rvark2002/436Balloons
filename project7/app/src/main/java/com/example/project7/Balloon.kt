@@ -27,6 +27,11 @@ class Balloon {
     fun getY() : Int {return this.y}
     fun getRadius() : Int {return this.radius}
 
+    fun isPopped() : Boolean = popped
+    fun pop(){
+        popped = true
+    }
+
     override fun toString() : String{
         return "Balloon : "+getX() + " "+getY() + " " + getRadius()
     }

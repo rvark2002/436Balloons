@@ -8,9 +8,11 @@ import javax.xml.parsers.SAXParser
 import javax.xml.parsers.SAXParserFactory
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var gameView: GameView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(gameView)
 
         var factory : SAXParserFactory = SAXParserFactory.newInstance()
         var saxParser : SAXParser = factory.newSAXParser()
