@@ -5,6 +5,7 @@ class Balloon {
     private var x : Int
     private var y : Int
     private var radius : Int
+    private var popped : Boolean
 
     fun setX(text: String) {
         this.x = text.toInt()
@@ -21,6 +22,7 @@ class Balloon {
         this.x = x
         this.y = y
         this.radius = radius
+        this.popped = false
     }
 
     fun getX() : Int {return this.x}
@@ -33,6 +35,6 @@ class Balloon {
     }
 
     override fun toString() : String{
-        return "Balloon : "+getX() + " "+getY() + " " + getRadius()
+        return "Balloon: " + getX() + "; " + getY() + "; " + getRadius()
     }
 }
